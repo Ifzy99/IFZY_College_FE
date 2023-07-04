@@ -1,0 +1,94 @@
+ol{
+    color: red;
+    padding: unset;
+  
+}
+li{
+    color: black;
+    /* list-style:lower-roman; */
+}
+
+
+.tpPg{
+    background-image: linear-gradient(to right, rgba(187, 174, 174, 0.187), rgba(236, 225, 162, 0.584) );
+    padding: 4% 0;
+}
+.coyLogo{
+    padding: 5% 3%;
+}
+
+.coyLogoImg{
+    width: 500px;
+}
+
+.pgTextHeader{
+    background-image: linear-gradient(to right, rgba(241, 165, 165, 0.427), rgba(156, 146, 90, 0.584) );
+    padding: 1.3% 0;
+}
+.wAi{
+    color: rgb(217, 68, 68);
+    line-height: 1.5;
+}
+
+.coreVHeader{
+    background-color: rgb(207, 204, 204);
+}
+
+.watchWRD{
+    width: 60%;
+    margin: 50px auto;
+    padding: 3.5em 0;
+}
+.wwText{
+    padding: 2rem 0;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight:300;
+    font-family: 'Dongle', sans-serif;
+}
+
+
+   /* MISSION */
+.missMsg{
+    padding: 6%  4%;
+}
+.missMsgText{
+    font-weight: 900;
+    padding: 4% 5%;
+}
+
+.missMsg p{
+    padding: 0 5%;
+    color:#4e4a4a ;
+    font-size: 2rem;
+    font-family: 'Dongle', sans-serif;
+}
+
+.visMsg{
+    width: 85%;
+    margin: 30px auto; 
+}
+.visMsgHeader{
+    background-color: rgb(207, 204, 204);
+    padding: 1.8rem 1rem;
+}
+.visMsgTxt p{
+    margin-top: 15px;
+    font-size: 1.7rem;
+    font-family: 'Dongle', sans-serif;
+}
+
+.tgtMsg{
+    width: 85%;
+    margin: 30px auto;
+}
+.tgtMsgHeader h2{
+    font-size: 1.2rem;
+}
+
+.objVis{
+    width: 85%;
+    margin: 30px auto;
+}

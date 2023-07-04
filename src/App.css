@@ -1,0 +1,376 @@
+ ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: unset;
+  }
+   .ptivo li{
+    list-style: none;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    padding-bottom: 0.5rem;
+    color: #fff;
+    width: 100%;
+  }
+
+  
+  
+/* NAVBAR SECTION  */
+
+.navbar{
+    position:fixed;
+    width:100%;
+    z-index: 5;
+    padding: -3px 0;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    
+}
+
+
+.navCont {
+    border: 3px solid;
+    background-color: #4e4a4a;
+    padding: 1% 0;
+    /* height: 100%; */
+}
+
+.navImg img {
+    width: 100px;
+    padding-left: 20px;
+}
+
+#navbarNavDropdown {
+    justify-content: center;
+}
+
+
+
+/* HERO SECTION  */
+
+.carousel-capt{
+    position: absolute;
+    left: 5%;
+    top: 45%;
+}
+
+    .carousel-capt h5{
+        font-family: 'Playfair Display SC', serif;
+    }
+
+.carousel-capt p {
+    color: #fff;
+    width: 75%;
+    text-align: start;
+    font-size:1.5rem;
+    color: rgb(227, 191, 124);
+}
+.carousel-indicators{
+    padding:10px 0;
+}
+
+
+
+/* START SECTION  */
+
+.stPg{
+    width:90%;
+    margin: 10px auto;
+    color: #4e4a4a;
+    padding: 2em 0;
+    .stPgCont{
+        padding-bottom: 10px;
+        .stPgHeader h1{ 
+          font-family: 'Abril Fatface', cursive;
+          font-size:3.5em;
+        }
+        .stPgBody p{
+            width: 80%;
+            line-height: 1;
+            font-size:1.5rem;
+            margin: 25px 0;
+        }
+        .eBtn {
+            background-color: #4e4a4a;
+            padding: 13px 15px;
+        }
+    }
+    .stPgImage{
+       background-image: linear-gradient(to right, rgba(187, 174, 174, 0.187), rgba(223, 207, 112, 0.584) );
+        .boyImg{
+            width: 90%;
+        }
+    }
+    
+}
+
+
+/* ABOUT SECTION  */
+
+.AboutWrapper {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.AboutBox {
+    width: 200px;
+    text-align: center;
+    padding: 20px;
+    margin: 40px 20px 40px 0;
+    justify-content: space-between;
+}
+
+.AboutIcons {
+    padding-bottom: 1rem;
+}
+
+.AboutBox h3 {
+    padding: 1rem 0;
+}
+
+
+/* COLLEGE SECTION  */
+
+.collegeCont {
+    .collegeHeader {
+        text-align: center;
+        margin: 40px 0;
+        color: #4e4a4a;
+        padding-bottom: 2%;
+    }
+    .colList {
+        width: 90%;
+        margin: 0 auto;
+        .colWrapper {
+            display: flex;
+            color: #fff;
+            grid-template-columns: repeat(6, 1fr);
+            grid-gap: 10px;
+            .col {
+                transition: ease-in-out;
+                .colImg {
+                    background-image: url("./Image/html.jpg");
+                    background-size: cover;
+                    height: 200px;
+                    background-position: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .colImg1 {
+                    background-image: url("./Image/JS.jpg");
+                    background-size: cover;
+                    height: 200px;
+                    background-position: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .colImg2 {
+                    background-image: url("./Image/React.jpg");
+                    background-size: cover;
+                    height: 200px;
+                    background-position: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .colImg3 {
+                    background-image: url("./Image/angular.jpg");
+                    background-size: cover;
+                    height: 200px;
+                    background-position: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .colImg4 {
+                    background-image: url("./Image/PHP.jpg");
+                    background-size: cover;
+                    height: 200px;
+                    background-position: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .colImg5 {
+                    background-image: url("./Image/sql.jpg");
+                    background-size: cover;
+                    height: 200px;
+                    background-position: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+            .col:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+/* WELCOME SECTION  */
+#welcCont{
+    margin: 60px 0;
+    padding: 2rem 0;
+    .welcHeader{
+        font-size: 2rem;
+        margin-bottom: 40px;
+        padding-bottom: 2%;
+        text-align: center;
+        color: #4e4a4a;
+    }
+    .welcWrapper{
+      width: 60%;
+      margin:50px auto;
+      display: flex;
+      .welcImg{
+          width: 50%;
+          margin: 20px auto;
+        }
+        .welcText{
+          color: #4e4a4a;
+          text-align: justify;
+          width: 50%;
+      }
+    }
+  }
+
+  /* COPYRIGHT SECTION */
+  .copyR{
+      width: 100%;
+      background-color: #cbcac8;
+      color: #384a62;
+      font-weight: 400;
+      padding: 1rem 0;
+  }
+
+
+
+     /* FOOTER SECTION */
+ 
+#p-footer{
+    width: 100%;
+    font-family: SF Pro,sans-serif;
+
+    .phmf{
+      background-color: #4e4a4a;
+      
+      .phmf-container{
+        width: 80%;
+        margin: 0 auto;
+        font-weight: 600;
+        display: flex;
+        padding: 5% 0;
+        
+        .ptivo{
+          flex-basis: 20%;
+          .f-header{
+            color: #ece8d9;
+            line-height: 1.5rem;
+            font-size: 1rem;
+            padding-bottom: 1rem;
+          }
+        }
+      }
+    }
+    .copyW{
+      width: 100%;
+      background-color: #cbcac8;
+      color: #384a62;
+      font-weight: 400;
+      padding: 2rem 0;
+    }
+  }     
+
+
+  /* DASHBOARD  */
+
+.offcanvas-body{
+    .offCont{
+      display: flex;
+      margin: 0 auto;
+    }
+  }
+  
+  
+  
+
+
+  
+
+@media (max-width: 768px) {
+
+    #carouselExampleCaptions{
+        padding: 25px 0;
+    }
+    .carousel-capt{
+        position: absolute;
+        left: 5%;
+        top: 25%;
+    }
+    .carousel-capt h5{
+        font-family: 'Playfair Display SC', serif;
+        font-size: 1.2em;
+    }
+    .carousel-capt p{
+        font-size: 0.7em;
+    }
+    .carousel-indicators{
+       display: none;
+    }
+
+
+    
+
+
+    .AboutCont {
+        .AboutWrapper {
+            width: 100%;
+            flex-direction: column;
+            .AboutBox {
+                width: 97%;
+                margin: 10px auto;
+                padding: 2.5rem;
+            }
+        }
+    }
+
+
+    .collegeCont {
+        .colWrapper {
+            flex-direction: column;
+            .col{
+                width: 100%;
+                margin: 5px 0;
+                
+              }
+        }
+    }
+
+    #welcCont{
+        .welcWrapper{
+          width: 90%;
+          flex-direction: column;
+          .welcImg{
+              width: 100%;
+            }
+            .welcText{
+              width: 100%;
+          }
+        }
+      }
+
+    .phmf-container{
+        width: 90%;
+        flex-direction: column;
+      }
+      li{
+        text-align: start;
+        align-items: start;
+        align-content: start;
+      }
+}
