@@ -1,0 +1,52 @@
+
+
+.tpPg{
+    background-image: linear-gradient(to right, rgba(156, 115, 115, 0.187), rgba(235, 227, 180, 0.584) );
+    padding: 5% 0;
+}
+.headerTxt{
+    padding: 4% 7%;
+    text-align: start;
+    margin-top: 5rem;
+    width: 90%;
+}
+
+
+.conT{
+    width: 90%;
+    margin: 20px auto;
+}
+.msGImg{
+    padding: 3rem 0;
+}
+.msGImg img{
+    width: 250px;
+}
+.msGTxt{
+    padding: 2rem 0;
+    text-align: justify;
+}
+
+
+.courses{
+    background-color: #4e4a4a;
+}
+.coursesTxt h2{
+    font-family: 'Copse', serif;
+}
+.card{
+    width: 18rem;
+}
+.card .card-title{
+    color: #4e4a4a;
+}
+
+
+
+@media (max-width: 768px){
+    .card{
+        width: 25rem;
+        text-align: justify;
+        margin: 10px auto !important;
+    }
+}

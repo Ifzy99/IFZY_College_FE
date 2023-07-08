@@ -1,7 +1,6 @@
 import React from "react";
-import "./home.css";
-import Navbar from "../../src/components/Navbar";
-import Copyright from "../../src/components/Copyright";
+import Navbar from "../../../src/components/Navbar";
+import Copyright from "../../../src/components/Copyright";
 
 const History = () => {
   return (

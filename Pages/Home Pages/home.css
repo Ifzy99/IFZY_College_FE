@@ -3,7 +3,7 @@ ol{
     padding: unset;
   
 }
-li{
+.missCont li{
     color: black;
     /* list-style:lower-roman; */
 }
@@ -66,10 +66,11 @@ li{
     font-family: 'Dongle', sans-serif;
 }
 
-.visMsg{
+.msgCont{
     width: 85%;
     margin: 30px auto; 
 }
+
 .visMsgHeader{
     background-color: rgb(207, 204, 204);
     padding: 1.8rem 1rem;
@@ -80,15 +81,8 @@ li{
     font-family: 'Dongle', sans-serif;
 }
 
-.tgtMsg{
-    width: 85%;
-    margin: 30px auto;
-}
+
 .tgtMsgHeader h2{
     font-size: 1.2rem;
 }
 
-.objVis{
-    width: 85%;
-    margin: 30px auto;
-}

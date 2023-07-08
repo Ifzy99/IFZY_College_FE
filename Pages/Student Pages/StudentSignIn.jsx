@@ -45,9 +45,9 @@ const StudentSignIn = () => {
 
           <div className="sPgFooter">
             <div className="alt">
-              <hr />
+              <hr className="ln" />
               <p>Or</p>
-              <hr />
+              <hr className="ln" />
             </div>
             <center>
               <button className="btn btn-light goog">

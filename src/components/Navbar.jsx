@@ -26,12 +26,12 @@ const Navbar = () => {
 
           <li className="nav-item dropdown">
           <a className="nav-link dropdown text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Courses
+           Programmes
           </a>
           <ul className="dropdown-menu">
-            <li><Link className="dropdown-item text-dark" to="">Basic Degree</Link></li>
-            <li><Link className="dropdown-item text-dark" to="">Professional Degree</Link></li>
-            <li><Link className="dropdown-item text-dark" to="">Masters Degree</Link></li>
+            <li><Link className="dropdown-item text-dark" to="/basic">Basic Degree</Link></li>
+            <li><Link className="dropdown-item text-dark" to="/professional">Professional Degree</Link></li>
+            <li><Link className="dropdown-item text-dark" to="/masters">Masters Degree</Link></li>
           </ul>
         </li>
 

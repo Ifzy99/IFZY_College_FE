@@ -3,14 +3,17 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Home from '../Pages/Home'
+import Home from '../Pages/Home Pages/Home'
 import StudentSignUp from '../Pages/Student Pages/StudentSignUp'
 import StudentSignIn from '../Pages/Student Pages/StudentSignIn'
 import StaffSignUp from '../Pages/Staff Pages/StaffSignUp'
 import StaffSignIn from '../Pages/Staff Pages/StaffSignIn'
 import Dashboard from '../Pages/Student Pages/Dashboard'
-import History from '../Pages/Home Pages/History'
-import Mission from '../Pages/Home Pages/Mission'
+import History from '../Pages/Home Pages/about/History'
+import Mission from '../Pages/Home Pages/about/Mission'
+import Basic from '../Pages/Home Pages/programmes/basic/Basic'
+import Professional from '../Pages/Home Pages/programmes/prof/Professional'
+import Masters from '../Pages/Home Pages/programmes/masters/Masters'
 
 
 
@@ -31,6 +34,9 @@ function App() {
            <Route path= "/dashboard" element={<Dashboard/>}/>
            <Route path= "/history" element={<History/>}/>
            <Route path= "/mission" element={<Mission/>}/>
+           <Route path= "/basic" element={<Basic/>}/>
+           <Route path= "/professional" element={<Professional/>}/>
+           <Route path="/masters" element={<Masters/>}/>
          </Routes>
       </BrowserRouter>
     </>

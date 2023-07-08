@@ -1,6 +1,6 @@
 import React from "react";
 import "./student.css";
-import DashNav from "../../src/components/DashNav";
+import DashNav from "../../src/components/student Dashboard/DashNav";
 
 const Dashboard = () => {
   return (
