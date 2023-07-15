@@ -4,16 +4,17 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from '../Pages/Home Pages/Home'
-import StudentSignUp from '../Pages/Student Pages/StudentSignUp'
-import StudentSignIn from '../Pages/Student Pages/StudentSignIn'
+import StudentSignUp from '../Pages/Student Pages/signUp&signIn/StudentSignUp'
+import StudentSignIn from '../Pages/Student Pages/signUp&signIn/StudentSignIn'
 import StaffSignUp from '../Pages/Staff Pages/StaffSignUp'
 import StaffSignIn from '../Pages/Staff Pages/StaffSignIn'
-import Dashboard from '../Pages/Student Pages/Dashboard'
+import Dashboard from '../Pages/Student Pages/dashboard/Dashboard'
 import History from '../Pages/Home Pages/about/History'
 import Mission from '../Pages/Home Pages/about/Mission'
 import Basic from '../Pages/Home Pages/programmes/basic/Basic'
 import Professional from '../Pages/Home Pages/programmes/prof/Professional'
 import Masters from '../Pages/Home Pages/programmes/masters/Masters'
+import ChangePass from '../Pages/Student Pages/dashboard/changePassword/ChangePass'
 
 
 
@@ -37,6 +38,7 @@ function App() {
            <Route path= "/basic" element={<Basic/>}/>
            <Route path= "/professional" element={<Professional/>}/>
            <Route path="/masters" element={<Masters/>}/>
+           <Route path="/changePassword" element={<ChangePass/>}/>
          </Routes>
       </BrowserRouter>
     </>

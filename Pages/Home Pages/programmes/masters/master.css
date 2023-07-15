@@ -1,0 +1,24 @@
+
+
+.tpPg{
+    background-image: linear-gradient(to right, rgba(156, 115, 115, 0.187), rgba(235, 227, 180, 0.584) );
+    padding: 5% 0;
+}
+.headerTxt{
+    padding: 3% 7%;
+    text-align: start;
+    margin-top: 5rem;
+    width: 90%;
+}
+
+
+.conT{
+    width: 90%;
+    margin: 20px auto;
+}
+.info1Img img{
+    width: 35rem;
+}
+.info1Txt {
+    text-align: justify;
+}

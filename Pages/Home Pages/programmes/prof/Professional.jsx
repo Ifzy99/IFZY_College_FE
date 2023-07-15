@@ -3,10 +3,19 @@ import Navbar from "../../../../src/components/Navbar";
 import "./prof.css";
 import { Link } from "react-router-dom";
 import Copyright from "../../../../src/components/Copyright";
+import { useSelector, useDispatch } from 'react-redux'
+import { increment,increWtParams } from "../../../../src/redux/counterSlice";
+
 
 const Professional = () => {
+  const dispatch = useDispatch()
+  let count = useSelector((state)=>state.counterReducer.count)
   return (
     <>
+    <h3>{count}</h3>
+     <button onClick={()=>dispatch(increWtParams(20))}>increWtParams</button>
+
+
       <Navbar />
       <div className="profCont">
         <div className="tpPg">

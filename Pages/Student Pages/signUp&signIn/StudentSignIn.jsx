@@ -1,9 +1,37 @@
 import React from "react";
-import Navbar from "../../src/components/Navbar";
+import Navbar from "../../../src/components/Navbar";
 import "./student.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useFormik } from "formik";
+import * as Yup from "yup";
+import axios from "axios";
+
 
 const StudentSignIn = () => {
+  const navigate = useNavigate();
+  let studentData = useFormik({
+    initialValues: {
+      email: "",
+      password: "",
+    },
+    onSubmit: (values)=>{
+      console.log(values);
+
+      const endpoint = "http://localhost:5000/Student/SignIn"
+      axios.post(endpoint, values)
+      .then((response)=>{
+         if(response.data=="correct"){
+            navigate(`/dashboard ${values.email} `)
+         }else{
+          alert("Incorrect Details")
+         }
+      })
+      .catch((err)=>{
+         console.log(err);
+      })
+    }
+  });
+
   return (
     <>
       <div className="sPage">
@@ -13,14 +41,16 @@ const StudentSignIn = () => {
           style={{ borderRadius: "4%" }}
         >
           <center className="sPageLogo pt-4 py-3 mt-3 my-3">
-            <img src="Image/myLogo.png" alt="" className="sPageImg"/>
+            <img src="Image/myLogo.png" alt="" className="sPageImg" />
           </center>
+
+          <form action="" onSubmit={studentData.handleSubmit}>
 
           <div
             className="inputbox form-group my-3"
             style={{ width: "80%", margin: "0 auto" }}
           >
-            <input required="required" type="text" />
+            <input required="required" type="text" name="email" onChange={studentData.handleChange} />
             <span>Email</span>
             <i></i>
           </div>
@@ -29,7 +59,7 @@ const StudentSignIn = () => {
             className="inputbox form-group my-3"
             style={{ width: "80%", margin: "0 auto" }}
           >
-            <input required="required" type="text" />
+            <input required="required" type="text" name="password" onChange={studentData.handleChange}/>
             <span>Password</span>
             <i></i>
           </div>
@@ -42,6 +72,8 @@ const StudentSignIn = () => {
               LOG IN
             </button>
           </center>
+          </form>
+
 
           <div className="sPgFooter">
             <div className="alt">
@@ -67,7 +99,7 @@ const StudentSignIn = () => {
                 </div>
               </button>
             </center>
-
+            
             <div className="fgt mt-3">
               <p>
                 <Link to="">Forgot your password?</Link>
@@ -78,7 +110,7 @@ const StudentSignIn = () => {
               <p>
                 New to IFZY?{" "}
                 <span>
-                  <Link  to="/StudentSignUp">Sign Up</Link>
+                  <Link to="/StudentSignUp">Sign Up</Link>
                 </span>
               </p>
             </div>

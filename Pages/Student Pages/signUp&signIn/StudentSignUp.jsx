@@ -1,10 +1,10 @@
 import { useFormik } from "formik";
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
-import Navbar from "../../src/components/Navbar";
+import Navbar from "../../../src/components/Navbar";
 import axios from "axios";
 import "./student.css";
-import Footer from "../../src/components/Footer";
+import Footer from "../../../src/components/Footer";
 import * as yup from "yup";
 
 const StudentSignUp = () => {

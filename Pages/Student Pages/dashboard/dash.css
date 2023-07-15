@@ -1,0 +1,74 @@
+
+.kkkd{
+    width:100%;
+    display:flex
+} 
+.OFF{
+    flex-basis:20%;
+}
+.DAS{
+    flex-basis: 80%;
+}
+
+
+.studDets{
+    margin: 15px auto;
+    padding: 0 1.5rem;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.studID{
+    flex-basis: 23%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    padding: 0 5%;
+}
+.studID p{
+    font-size: 0.6rem;
+    text-align: end;
+}
+.studNo {
+  color: #4e4a4a;
+  padding: 0 6px;
+}
+
+
+.msG{
+    margin-top: 10%;
+    padding: 0 1.5rem;
+}
+.msG .nM{
+    text-decoration: underline;
+    color: #4e4a4a;
+    font-size: 1.5rem;
+    font-family: 'Playfair Display SC', serif;
+
+}
+.msG p{
+    text-align: justify;
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+.msG .enQ{
+    color: #ff0000;
+}
+.nuM{
+    color: #008000;
+}
+
+@media (max-width: 768px) {
+   
+    .kkkd{
+        flex-direction: column;
+    }
+   
+    .wrapper{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .studID{
+        flex-basis: 48%;
+        margin: 5px 0;
+    }
+}
