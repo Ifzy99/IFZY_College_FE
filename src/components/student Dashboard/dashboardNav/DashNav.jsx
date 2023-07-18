@@ -13,7 +13,10 @@ const DashNav = () => {
     <>
     <div className="topPg">
     <div className="topPgIcon">
+        <Link className="iconLink" to="/notices">
         <h3><IoIosNotifications/></h3>
+        </Link>
+
         <h4><FaUserAlt/></h4>
         <h3><FaEnvelope/></h3>
         <h3><MdNotificationImportant/></h3>

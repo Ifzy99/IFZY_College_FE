@@ -1,0 +1,67 @@
+
+
+.mainCont{
+    width: 100%;
+    display:flex;
+}
+
+.OFF{
+    flex-basis:20%;
+}
+.BOD{
+    flex-basis: 80%;
+}
+
+.profileBdy{
+   padding: 2% 3%;
+}
+.pHeaderImg{
+    text-align: end;
+}
+.num{
+    background-color: rgba(201, 175, 30, 0.708);
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+}
+.txt{
+    color: #4e4a4a;
+}
+.profTitle{
+    margin-bottom: 10px;
+}
+.profTitle p{
+    font-size: 0.6em;
+}
+
+
+
+  /* DOCUMENTS */
+.docHeader{
+    color: #4e4a4a;
+}
+.docBdy p{
+   font-size: 0.9em;
+}
+
+     /* NOTICE */
+ .notcBdy p{
+    padding: 3rem 0;
+    text-align: center;
+    color: #ff0000;
+ }    
+
+
+
+@media (max-width: 768px) {
+   
+    .mainCont{
+        flex-direction: column;
+    }
+
+    .profileBdy{
+        width: 90%;
+        margin: 0 auto;
+    } 
+   
+}

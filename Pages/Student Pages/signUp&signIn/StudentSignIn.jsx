@@ -21,7 +21,7 @@ const StudentSignIn = () => {
       axios.post(endpoint, values)
       .then((response)=>{
          if(response.data=="correct"){
-            navigate(`/dashboard ${values.email} `)
+            navigate(`/dashboard`)
          }else{
           alert("Incorrect Details")
          }

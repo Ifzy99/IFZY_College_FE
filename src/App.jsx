@@ -15,6 +15,9 @@ import Basic from '../Pages/Home Pages/programmes/basic/Basic'
 import Professional from '../Pages/Home Pages/programmes/prof/Professional'
 import Masters from '../Pages/Home Pages/programmes/masters/Masters'
 import ChangePass from '../Pages/Student Pages/dashboard/changePassword/ChangePass'
+import Profile from '../Pages/Student Pages/dashboard/profile/Profile'
+import Documents from '../Pages/Student Pages/dashboard/docx/Documents'
+import Notice from '../Pages/Student Pages/dashboard/notice board/Notice'
 
 
 
@@ -39,6 +42,9 @@ function App() {
            <Route path= "/professional" element={<Professional/>}/>
            <Route path="/masters" element={<Masters/>}/>
            <Route path="/changePassword" element={<ChangePass/>}/>
+           <Route path="/profile" element={<Profile/>}/>
+           <Route path="/docs" element={<Documents/>}/>
+           <Route path="/notices" element={<Notice/>}/>
          </Routes>
       </BrowserRouter>
     </>
