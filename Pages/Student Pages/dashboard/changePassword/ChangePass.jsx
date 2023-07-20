@@ -47,7 +47,7 @@ const ChangePass = () => {
       const endpoint = "http://localhost:5000/update_info"
       axios.post(endpoint, newValue)
       .then((response)=>{
-         
+          console.log(response);
       })
     }
   })
@@ -79,7 +79,7 @@ const ChangePass = () => {
                   <input type="text" className="form-control" />
                 </div>
                  <div className="form-group my-3 py-">
-                <button className="changeBtn">Save changes</button>
+                <button className="changeBtn" type="submit">Save changes</button>
                 </div>
               </form>
             </div>

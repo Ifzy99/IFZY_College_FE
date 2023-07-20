@@ -2,7 +2,9 @@ import React from "react";
 import "../style.css";
 import OffCanvas from "../../../../src/components/student Dashboard/offCanvas Comp/OffCanvas";
 import DashNav from "../../../../src/components/student Dashboard/dashboardNav/DashNav";
-import { BsImageFill } from "react-icons/bs";
+import { BsImageFill,BsFillPencilFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
+
 
 const Profile = () => {
   return (
@@ -125,6 +127,16 @@ const Profile = () => {
               </div>
             </div>
           </div>
+              
+             
+             <Link className="editLink" to="/profile/editPg">
+             <div className="goToEditPg">
+                 <h3><BsFillPencilFill/></h3>
+             </div>
+             </Link>
+             
+               
+          
         </div>
       </div>
     </>

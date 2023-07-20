@@ -18,12 +18,14 @@ import ChangePass from '../Pages/Student Pages/dashboard/changePassword/ChangePa
 import Profile from '../Pages/Student Pages/dashboard/profile/Profile'
 import Documents from '../Pages/Student Pages/dashboard/docx/Documents'
 import Notice from '../Pages/Student Pages/dashboard/notice board/Notice'
+import EditPg from '../Pages/Student Pages/dashboard/profile/EditPg'
 
 
 
 
 function App() {
   // const [count, setCount] = useState(0)
+  let studentToken = localStorage.studentToken
 
   return (
     <>
@@ -35,7 +37,7 @@ function App() {
            <Route path='/StudentSignIn' element={<StudentSignIn/>}/>
            <Route path= "/admin/SignUp" element={<StaffSignUp/>}/>
            <Route path= "/admin" element={<StaffSignIn/>}/>
-           <Route path= "/dashboard" element={<Dashboard/>}/>
+           <Route path= "/dashboard" element={studentToken ? <Dashboard/> : <StudentSignIn/>}/>
            <Route path= "/history" element={<History/>}/>
            <Route path= "/mission" element={<Mission/>}/>
            <Route path= "/basic" element={<Basic/>}/>
@@ -45,6 +47,8 @@ function App() {
            <Route path="/profile" element={<Profile/>}/>
            <Route path="/docs" element={<Documents/>}/>
            <Route path="/notices" element={<Notice/>}/>
+           <Route path="/profile/editPg" element={<EditPg/>}/> 
+
          </Routes>
       </BrowserRouter>
     </>

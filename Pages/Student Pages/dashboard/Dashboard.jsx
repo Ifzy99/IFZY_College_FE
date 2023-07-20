@@ -8,7 +8,7 @@ import "./dash.css";
 import OffCanvas from "../../../src/components/student Dashboard/offCanvas Comp/OffCanvas";
 import {IoIosNotifications } from 'react-icons/io';
 import {FaUserAlt,FaEnvelope,FaUserTie}  from'react-icons/fa';
-import { MdNotificationImportant,MdOutlineAutoGraph } from 'react-icons/md';
+import { MdEmail, MdNotificationImportant,MdOutlineAutoGraph } from 'react-icons/md';
 import { RiGraduationCapFill } from 'react-icons/ri';
 import { BiSolidSchool } from 'react-icons/bi';
 
@@ -21,25 +21,28 @@ import { BiSolidSchool } from 'react-icons/bi';
 
 
 
-const Dashboard = () => {
+const Dashboard = ({myEmail}) => {
   const dispatch=useDispatch()
   let studentData = useSelector((state)=>state.counterReducer.studentData)
+  // studentData.email
+  // console.log(myEmail);
 
   useEffect(() => {
-    let email = 'olatunbosunifeoluwa123@gmail.com'
+    // let email = 'olatunbosunifeoluwa123@gmail.com'
+    let studentToken = localStorage.studentToken
     let endpoint = "http://localhost:5000/student_info"
     axios.get(endpoint, {
       headers: {
-        Authorization: email,
+        Authorization: studentToken,
         'Content-Type': "application/json"
       }
     })
     .then((response) => {
-      console.log(response.data.response);
-      dispatch(studentInfo(response.data.response))
+      // console.log(response.data);
+      dispatch(studentInfo(response.data))
 
     })
-  }, [])
+  }, [studentData])
   
   return (
     <>
@@ -66,6 +69,7 @@ const Dashboard = () => {
                           <div className="studNo d-flex">
                              <h3><RiGraduationCapFill/></h3>
                              <h6 className="ms-5">{studentData.firstname}</h6>
+                             <h6>{studentData.email}</h6>
                           </div>
                           <hr />
                            <p>Programme</p>
