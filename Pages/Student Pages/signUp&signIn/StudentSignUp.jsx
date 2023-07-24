@@ -1,10 +1,10 @@
 import { useFormik } from "formik";
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
-import Navbar from "../../../src/components/Navbar";
+import Navbar from "../../../src/components/landing Pg/Navbar";
 import axios from "axios";
 import "./student.css";
-import Footer from "../../../src/components/Footer";
+import Footer from "../../../src/components/landing Pg/Footer";
 import * as yup from "yup";
 
 const StudentSignUp = () => {
@@ -49,7 +49,7 @@ const StudentSignUp = () => {
                 .required("Phone No. is required")
                 .min(9, "Phone number must be at least 9 characters long")
                 .max(11, "Phone number must not exceed 11 characters")
-                .matches(/^\d{3}-\d{3}-\d{5}$/, 'Phone number must not exceed 11 characters long')
+                // .matches(/^\d{3}-\d{3}-\d{5}$/, 'Phone number must not exceed 11 characters long')
       ,
      
     }),

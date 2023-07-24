@@ -4,9 +4,11 @@ import OffCanvas from "../../../../src/components/student Dashboard/offCanvas Co
 import DashNav from "../../../../src/components/student Dashboard/dashboardNav/DashNav";
 import { BsImageFill,BsFillPencilFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 
 const Profile = () => {
+  let studentData = useSelector((state)=>state.counterReducer.studentData)
   return (
     <>
       <div className="mainCont">
@@ -37,12 +39,12 @@ const Profile = () => {
               <div className="row">
                 <div className="profTitle col-lg-6 col-sm-12">
                   <p>Firstname</p>
-                  <div></div>
+                  <div>{studentData.firstname}</div>
                   <hr />
                 </div>
                 <div className="profTitle col-lg-6 col-sm-12">
                   <p>Lastname</p>
-                  <div></div>
+                  <div>{studentData.lastname}</div>
                   <hr />
                 </div>
                 <div className="profTitle col-lg-6 col-sm-12">
@@ -84,7 +86,7 @@ const Profile = () => {
               <div className="row mt-3">
                 <div className="profTitle col-lg-6 col-sm-12">
                   <p>Phone 1</p>
-                  <div></div>
+                  <div>{studentData.phone}</div>
                   <hr />
                 </div>
                 <div className="profTitle col-lg-6 col-sm-12">
@@ -94,7 +96,7 @@ const Profile = () => {
                 </div>
                 <div className="profTitle col-lg-6 col-sm-12">
                   <p>Email</p>
-                  <div></div>
+                  <div>{studentData.email}</div>
                   <hr />
                 </div>
                 <div className="profTitle col-lg-6 col-sm-12">

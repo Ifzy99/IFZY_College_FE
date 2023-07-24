@@ -8,7 +8,7 @@ import StudentSignUp from '../Pages/Student Pages/signUp&signIn/StudentSignUp'
 import StudentSignIn from '../Pages/Student Pages/signUp&signIn/StudentSignIn'
 import StaffSignUp from '../Pages/Staff Pages/StaffSignUp'
 import StaffSignIn from '../Pages/Staff Pages/StaffSignIn'
-import Dashboard from '../Pages/Student Pages/dashboard/Dashboard'
+import Dashboard from '../Pages/Student Pages/dashboard/dashB/Dashboard'
 import History from '../Pages/Home Pages/about/History'
 import Mission from '../Pages/Home Pages/about/Mission'
 import Basic from '../Pages/Home Pages/programmes/basic/Basic'
@@ -19,6 +19,8 @@ import Profile from '../Pages/Student Pages/dashboard/profile/Profile'
 import Documents from '../Pages/Student Pages/dashboard/docx/Documents'
 import Notice from '../Pages/Student Pages/dashboard/notice board/Notice'
 import EditPg from '../Pages/Student Pages/dashboard/profile/EditPg'
+import Card from './components/landing Pg/Card'
+import SignIn from '../Pages/SignIn'
 
 
 
@@ -48,6 +50,8 @@ function App() {
            <Route path="/docs" element={<Documents/>}/>
            <Route path="/notices" element={<Notice/>}/>
            <Route path="/profile/editPg" element={<EditPg/>}/> 
+           <Route path="/card" element={<Card/>}/> 
+           <Route path="/sn" element={<SignIn/>}/>
 
          </Routes>
       </BrowserRouter>

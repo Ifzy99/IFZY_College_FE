@@ -243,6 +243,15 @@
       padding: 1rem 0;
   }
 
+   /* CARD  */
+ .card-body h5{
+    font-weight: bold;
+}
+.card-body:nth-child(2){
+   font-size: 0.9rem;
+}
+
+
 
 
      /* FOOTER SECTION */

@@ -1,16 +1,17 @@
 import React, { useEffect } from "react";
-import DashNav from "../../../src/components/student Dashboard/dashboardNav/DashNav";
+
 import { useSelector, useDispatch } from 'react-redux'
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import { studentInfo } from "../../../src/redux/counterSlice";
-import "./dash.css";
-import OffCanvas from "../../../src/components/student Dashboard/offCanvas Comp/OffCanvas";
+import "../dashB/dash.css";
 import {IoIosNotifications } from 'react-icons/io';
 import {FaUserAlt,FaEnvelope,FaUserTie}  from'react-icons/fa';
 import { MdEmail, MdNotificationImportant,MdOutlineAutoGraph } from 'react-icons/md';
 import { RiGraduationCapFill } from 'react-icons/ri';
 import { BiSolidSchool } from 'react-icons/bi';
+import DashNav from "../../../../src/components/student Dashboard/dashboardNav/DashNav";
+import { studentInfo } from "../../../../src/redux/counterSlice";
+import OffCanvas from "../../../../src/components/student Dashboard/offCanvas Comp/OffCanvas";
 
 
 
@@ -21,7 +22,7 @@ import { BiSolidSchool } from 'react-icons/bi';
 
 
 
-const Dashboard = ({myEmail}) => {
+const Dashboard = ({}) => {
   const dispatch=useDispatch()
   let studentData = useSelector((state)=>state.counterReducer.studentData)
   // studentData.email
@@ -59,7 +60,7 @@ const Dashboard = ({myEmail}) => {
                       <div className="studID">
                           <div className="studNo d-flex">
                              <h3><FaUserTie/></h3>
-                             <h6 className="ms-5">{studentData.firstname}</h6>
+                             <h6 className="ms-5 mt-3"></h6>
                           </div>
                           <hr />
                            <p>Student ID</p>
@@ -68,8 +69,7 @@ const Dashboard = ({myEmail}) => {
                       <div className="studID">
                           <div className="studNo d-flex">
                              <h3><RiGraduationCapFill/></h3>
-                             <h6 className="ms-5">{studentData.firstname}</h6>
-                             <h6>{studentData.email}</h6>
+                             <h6 className="ms-5 mt-3">{studentData.firstname}</h6>
                           </div>
                           <hr />
                            <p>Programme</p>
@@ -78,15 +78,15 @@ const Dashboard = ({myEmail}) => {
                       <div className="studID">
                           <div className="studNo d-flex">
                              <h3><BiSolidSchool/></h3>
-                             <h6 className="ms-5">{studentData.firstname}</h6>
+                             <h6 className="ms-5 mt-3"></h6>
                           </div>
                           <hr />
-                           <p>Programme</p>
+                           <p>College</p>
                       </div>
                       <div className="studID">
                           <div className="studNo d-flex">
                              <h3><MdOutlineAutoGraph/></h3>
-                             <h6 className="ms-5">{studentData.firstname}</h6>
+                             <h6 className="ms-5 mt-3"></h6>
                           </div>
                           <hr />
                            <p>CGPA</p>

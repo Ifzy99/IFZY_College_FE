@@ -1,8 +1,9 @@
 import React from "react";
-import Navbar from "../../../../src/components/Navbar";
+import Navbar from "../../../../src/components/landing Pg/Navbar";
 import "./prog.css";
 import { Link } from "react-router-dom";
-import Copyright from "../../../../src/components/Copyright";
+import Copyright from "../../../../src/components/landing Pg/Copyright";
+import Card from "../../../../src/components/landing Pg/Card";
 
 const Basic = () => {
   return (
@@ -75,36 +76,8 @@ const Basic = () => {
           </div>
 
           <div className="acredCard">
-            <div className="card" style={{ width: "25rem" }}>
-              <img
-                src="Image/software-deve.jpg"
-                className="card-img-top"
-                alt=""
-              />
-              <div className="card-body">
-                <h5 className="card-title">FRONTEND</h5>
-                <p className="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Architecto ab commodi nemo accusamus vero, eaque consectetur
-                  temporibus. Aspernatur nemo, perspiciatis molestias,
-                  voluptatem ratione officia quaerat praesentium, suscipit quae
-                  molestiae esse.
-                </p>
-              </div>
-            </div>
-            <div className="card" style={{ width: "25rem" }}>
-              <img src="Image/server.jpg" className="card-img-top" alt="" />
-              <div className="card-body">
-                <h5 className="card-title">BACKEND</h5>
-                <p className="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Architecto ab commodi nemo accusamus vero, eaque consectetur
-                  temporibus. Aspernatur nemo, perspiciatis molestias,
-                  voluptatem ratione officia quaerat praesentium, suscipit quae
-                  molestiae esse.
-                </p>
-              </div>
-            </div>
+             <Card className="card me-lg-5" image="Image/software-deve.jpg" title="FRONTEND" myStyle={{width:"25rem"}} />
+             <Card className="card" image="Image/server.jpg" title="BACKEND" myStyle={{width:"25rem"}} />
           </div>
         </div>
 

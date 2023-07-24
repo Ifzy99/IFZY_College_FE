@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../../../src/components/Navbar";
+import Navbar from "../../../src/components/landing Pg/Navbar";
 import "./student.css";
 import { Link, useNavigate } from "react-router-dom";
 import { useFormik } from "formik";
