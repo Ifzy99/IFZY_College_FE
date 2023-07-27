@@ -15,9 +15,13 @@ const Start = () => {
                 experts.
               </p>
             </div>
-            <button className="btn eBtn">
-              <Link className="text-light" to="/StudentSignUp">Enroll Now</Link>
-            </button>
+            <Link className="text-light" to="/StudentSignUp">
+             <button className="eBtn">
+             <span>
+                Enroll Now
+             </span>
+              </button>
+              </Link>
           </div>
 
           <div className="col-lg-6 col-sm-12">

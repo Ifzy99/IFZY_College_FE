@@ -21,6 +21,7 @@ import Notice from '../Pages/Student Pages/dashboard/notice board/Notice'
 import EditPg from '../Pages/Student Pages/dashboard/profile/EditPg'
 import Card from './components/landing Pg/Card'
 import SignIn from '../Pages/SignIn'
+import ModeOfStdy from '../Pages/Home Pages/admissions/MOS/ModeOfStdy'
 
 
 
@@ -51,7 +52,9 @@ function App() {
            <Route path="/notices" element={<Notice/>}/>
            <Route path="/profile/editPg" element={<EditPg/>}/> 
            <Route path="/card" element={<Card/>}/> 
+           <Route path="/mode-of-study" element={<ModeOfStdy/>}/>
            <Route path="/sn" element={<SignIn/>}/>
+
 
          </Routes>
       </BrowserRouter>

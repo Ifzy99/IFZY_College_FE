@@ -13,6 +13,7 @@
     color: #fff;
     width: 100%;
   }
+  
 
   
   
@@ -36,6 +37,7 @@
     width: 100px;
     padding-left: 20px;
 }
+
 #navbarNavDropdown {
     justify-content: center;
 }
@@ -43,6 +45,9 @@
 
 
 /* HERO SECTION  */
+/* .carousel-item img{
+    opacity: 3!important;
+} */
 
 .carousel-capt{
     position: absolute;
@@ -58,8 +63,11 @@
     color: #fff;
     width: 75%;
     text-align: start;
-    font-size:1.5rem;
-    color: rgb(227, 191, 124);
+    font-size:1.2rem;
+    /* color: rgba(199, 154, 71, 0.886);
+    color: #384a62; */
+    color: #929252;
+    font-family: fantasy;
 }
 .carousel-indicators{
     padding:10px 0;
@@ -85,17 +93,47 @@
             line-height: 1;
             font-size:1.5rem;
             margin: 25px 0;
+            font-family: 'Times New Roman', Times, serif;
         }
         .eBtn {
+            vertical-align: middle;
             background-color: #4e4a4a;
             padding: 13px 15px;
+            border-radius: 4px;
+            border: none;
+            transition: all 0.5s;
+            margin: 5px;
+            color: #fff;
+        }
+        .eBtn span{
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+        .eBtn span:after{
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+        .eBtn:hover span{
+            padding-right: 25px;
+        }
+        .eBtn:hover span:after{
+            opacity: 1;
+            right: 0;
         }
     }
     .stPgImage{
        background-image: linear-gradient(to right, rgba(187, 174, 174, 0.187), rgba(223, 207, 112, 0.584) );
-        .boyImg{
-            width: 90%;
-        }
+       border-radius: 5%;
+    }
+    .boyImg{
+        width: 90%;
+       
     }
     
 }
@@ -219,17 +257,19 @@
         color: #4e4a4a;
     }
     .welcWrapper{
-      width: 60%;
-      margin:50px auto;
+      width: 80%;
+      margin:40px auto;
       display: flex;
       .welcImg{
           width: 50%;
-          margin: 20px auto;
+          margin: 0 10px;
         }
         .welcText{
           color: #4e4a4a;
           text-align: justify;
           width: 50%;
+          font-family: 'Times New Roman', Times, serif;
+          font-size: 1rem;
       }
     }
   }

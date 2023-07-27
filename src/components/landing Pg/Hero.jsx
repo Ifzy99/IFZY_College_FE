@@ -3,7 +3,7 @@ import React from "react";
 const Hero = () => {
   return (
     <>
-      <div id="carouselExampleCaptions" className="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div id="carouselExampleCaptions" className="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-wrap="true">
       <div className="carousel-indicators">
       <button
         type="button"
@@ -31,7 +31,7 @@ const Hero = () => {
 
         <div className="carousel-inner">
           <div className="carousel-item active" data-bs-interval="3000">
-            <img src="https://res.cloudinary.com/dakiyibak/image/upload/c_scale,h_600,q_auto:best,w_1900/v1685979345/building.jpg" className="d-block w-100 img-responsive img-fluid" alt="..." />
+            <img src="https://res.cloudinary.com/dakiyibak/image/upload/c_scale,h_600,q_auto:best,w_1900/v1685979345/building.jpg" className="d-block w-100 img-responsive img-fluid" alt="..." style={{opacity:"80%"}} />
             <div className="carousel-capt d-flex flex-column  d-md-block">
                 <div className="w-auto text-start  ">
                 <h5 className="display-6 fw-bold text-light">WELCOME TO IFZY</h5>
@@ -55,9 +55,9 @@ const Hero = () => {
           </div>
 
           <div className="carousel-item"  data-bs-interval="2000">
-            <img src="https://res.cloudinary.com/dakiyibak/image/upload/c_scale,h_600,q_auto:best,w_1900/v1685979229/school.jpg" class="d-block w-100 img-fluid" alt="..." />
-            <div class="carousel-capt  d-md-block">
-              <div class="w-auto text-start ">
+            <img src="https://res.cloudinary.com/dakiyibak/image/upload/c_scale,h_600,q_auto:best,w_1900/v1685979229/school.jpg" className="d-block w-100 img-fluid" alt="..." />
+            <div className="carousel-capt  d-md-block">
+              <div className="w-auto text-start ">
               <h5 className="display-6 fw-bold text-light">CONDUCIVE ACADEMIC LEARNING ENVIROMENT</h5>
               <p className="text-center">
                   IFZY is a modern learning institution which offers both physical classess as well as online classes.

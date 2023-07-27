@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 
+
+
 const Navbar = () => {
   return (
     <>
@@ -25,7 +27,7 @@ const Navbar = () => {
           </li>
 
           <li className="nav-item dropdown">
-          <a className="nav-link dropdown text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a className="nav-link nav-link-hover dropdown text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
            Programmes
           </a>
           <ul className="dropdown-menu">
@@ -39,7 +41,7 @@ const Navbar = () => {
             <a className="nav-link text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Admissions</a>
             <ul className="dropdown-menu">
               <li><Link className="dropdown-item text-dark" to="">Apply for a Programme</Link></li>
-              <li><Link className="dropdown-item text-dark" to="">Mode of Study</Link></li>
+              <li><Link className="dropdown-item text-dark" to="/mode-of-study">Mode of Study</Link></li>
               <li><Link className="dropdown-item text-dark" to="">Tuition</Link></li>
               <li><Link className="dropdown-item text-dark" to="">FAQ</Link></li>
             </ul>

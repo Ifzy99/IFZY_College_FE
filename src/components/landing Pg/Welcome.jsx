@@ -12,7 +12,7 @@ const Welcome = () => {
             <img
               src="Image/Ifeoluwa.jpg"
               alt="founderImage"
-              style={{ width: "300px", borderRadius: "50%" }}
+              style={{ width: "350px", borderRadius: "50%" }}
             />
           </center>
           <div className="welcText">
@@ -33,7 +33,7 @@ const Welcome = () => {
               dolorem, ipsum sit laudantium exercitationem placeat sunt animi
               laboriosam voluptatum, velit ut amet eius vitae soluta.
               Perferendis, repudiandae doloribus cumque tenetur odit culpa nemo
-              dolorum.
+              dolorum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nobis sunt, alias quisquam aut adipisci veritatis tempora doloremque consequatur tenetur atque ut vero deserunt in facilis molestiae minus voluptatibus repellat necessitatibus reprehenderit aperiam. Aperiam, optio similique! Nulla totam voluptatem nobis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam necessitatibus perferendis error molestiae praesentium doloribus ratione hic quaerat optio natus.
             </p>
           </div>
         </div>
