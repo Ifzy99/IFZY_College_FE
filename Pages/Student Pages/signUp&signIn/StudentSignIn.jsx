@@ -20,7 +20,7 @@ const StudentSignIn = () => {
       const endpoint = "http://localhost:5000/Student/SignIn"
       axios.post(endpoint, values)
       .then((response)=>{
-         if(response.data.message=="correct"){
+         if(response.data.message=="User Signed in Successfully"){
           localStorage.studentToken = response.data.studentToken
             navigate(`/dashboard`)
          }else{

@@ -1,5 +1,236 @@
 
-
+.modeCont{
+    color: #4e4a4a;
+}
 .heroPg{
-    webkit
+    background-image: linear-gradient(to right, rgba(156, 115, 115, 0.187), rgba(231, 225, 191, 0.584) );
+    padding: 7rem 0;
+}
+.heroTxt{
+    width: 80%;
+    margin: 10px auto;
+    padding: 2.5rem 0;
+}
+.heroTxt h2{
+   font-size: 3rem;
+   font-weight: 700;
+}
+
+
+.txt1{
+    width: 80%;
+    margin: 20px auto;
+    text-align: justify;
+    padding: 2rem 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.inPClass{
+    background-image: linear-gradient(to left, rgba(156, 115, 115, 0.187), rgba(185, 171, 97, 0.726) );
+}
+.classHeader{
+    text-align: center;
+    padding: 2em 0;
+}
+.classHeader h3{
+   font-size: 2rem;
+   font-weight: 700;
+}
+
+.classCont{
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 2rem 0;
+    
+}
+.classCont img{
+   width: 400px
+}
+.classCont p {
+    line-height: 1.4;
+}
+
+.virtualC{
+    background-color: #daa520;
+}
+
+.onlineC{
+    background-image: linear-gradient(to left, rgba(156, 115, 115, 0.187), rgba(185, 171, 97, 0.726) ); 
+}
+
+/* APPLY FOR A PROGRAMM  */
+.applyCont .topPg{
+    color:#f0b319;
+    background-image: linear-gradient(to left, rgba(156, 115, 115, 0.187), rgba(185, 171, 97, 0.726) ); 
+    padding: 15% 0;
+}
+.topPg h2{
+    width: 80%;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: end;
+}
+
+.acaProg{
+    padding: 5rem 0;
+}
+.acaWrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 10px auto;
+}
+.degCont{
+    background-color: #f0b319;
+    
+}
+.degContItems {
+     padding: 4rem 2.5rem;
+     text-align: center;
+     color: #fff;
+}
+.degContItems img{
+    width:150px;
+}
+.degContItems h3{
+    font-size: 1.5rem;
+}
+.profDeg{
+    background-color: bisque;
+}
+.profDeg .degContItems{
+    padding: 3rem 1rem;
+}
+.profDeg h3{
+    margin: 0 auto;
+    width: 70%;
+}
+
+.acaInfo{
+    width: 80%;
+    margin: 20px auto;
+}
+.acaInfoBtn{
+    vertical-align: middle;
+    background-color: #4e4a4a;
+    padding: 13px 15px;
+    transition: all 0.5s;
+    color: #fff;
+    margin: 5px;
+}
+.acaInfoBtn span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.acaInfoBtn span::after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.acaInfoBtn:hover span{
+    padding-right: 25px;
+}
+.acaInfoBtn:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+
+/* FAQ  */
+.topSect{
+    background-image: linear-gradient(to left, rgba(156, 115, 115, 0.187), rgba(185, 171, 97, 0.726) ); 
+    padding: 10% 0;
+    color: #4e4a4a;
+    text-align: end;
+}
+.topSect h2{
+    width: 80%;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0 auto; 
+}
+.topSect p{
+    margin: 10px auto;
+    width: 80%;
+    font-size: 1rem;
+}
+.faqbdy{
+    padding: 5rem 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* TUITION  */
+.bDeg{
+    width: 80%;
+    margin: 10px auto;
+    padding: 2rem 0;
+}
+.bDeg h3{
+    color:#4e4a4a;
+    text-align: center;
+}
+.bDegCont{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.pDeg{
+    background-color: #4e4a4a;
+    text-align: center;
+    color: #fff;
+}
+.notes{
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 3rem 0;
+}
+
+
+@media (max-width: 768px){
+    .classCont{
+        flex-direction: column;
+    }  
+    .classCont p{
+        margin-top: 25px;
+    }
+     
+    .applyCont .topPg{
+        padding: 25% 0;
+    }
+    .applyCont .topPg h2{
+        font-size: 2rem;
+    }
+    .classHeader h3{
+        font-size: 1.5rem;
+    }
+
+    .acaWrapper{
+        flex-direction: column;
+        margin: 10px auto;
+    }
+    .degCont{
+        margin: 20px 0;
+    }
+
+    .topSect h2{
+        font-size: 2rem;
+         padding: 3rem 0;
+    }
+    .bDegCont{
+        flex-direction: column;
+    }
+    .accrd{
+        padding-right: 20px;
+    }
 }

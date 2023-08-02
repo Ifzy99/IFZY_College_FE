@@ -40,10 +40,10 @@ const Navbar = () => {
           <li className="nav-item dropdown">
             <a className="nav-link text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Admissions</a>
             <ul className="dropdown-menu">
-              <li><Link className="dropdown-item text-dark" to="">Apply for a Programme</Link></li>
+              <li><Link className="dropdown-item text-dark" to="/apply-for-a-programme">Apply for a Programme</Link></li>
               <li><Link className="dropdown-item text-dark" to="/mode-of-study">Mode of Study</Link></li>
-              <li><Link className="dropdown-item text-dark" to="">Tuition</Link></li>
-              <li><Link className="dropdown-item text-dark" to="">FAQ</Link></li>
+              <li><Link className="dropdown-item text-dark" to="/tuition">Tuition</Link></li>
+              <li><Link className="dropdown-item text-dark" to="/faq">FAQ</Link></li>
             </ul>
           </li>
 
@@ -58,7 +58,7 @@ const Navbar = () => {
           </li>
 
           <li className="nav-item dropdown">
-             <Link className="nav-link text-light" to="">News</Link>
+             <Link className="nav-link text-light" to="/news">News</Link>
         </li>
         </ul>
         </div>

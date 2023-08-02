@@ -38,8 +38,8 @@
 .goToEditPg{
     background-color: #4e4a4a;
     width: 100px; 
-    border-radius: 50%;
-    margin-top: 20px; 
+    margin: 20px 30px; 
+
 }
 .goToEditPg h3{
     text-align: center;
@@ -49,6 +49,17 @@
     color: #fff;
 }
 
+/* EDIT PAGE  */
+.pflSelect{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #4e4a4a;
+}
+.editInp{
+    border: none;
+    border-bottom: 1px solid #4e4a4a;
+    border-radius: 0;
+}
 
 
 

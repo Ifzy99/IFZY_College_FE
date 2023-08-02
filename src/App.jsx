@@ -22,6 +22,11 @@ import EditPg from '../Pages/Student Pages/dashboard/profile/EditPg'
 import Card from './components/landing Pg/Card'
 import SignIn from '../Pages/SignIn'
 import ModeOfStdy from '../Pages/Home Pages/admissions/MOS/ModeOfStdy'
+import Apply from '../Pages/Home Pages/admissions/applyForProg/Apply'
+import FAQ from '../Pages/Home Pages/admissions/faq/FAQ'
+import Accordion from './components/landing Pg/Accordion'
+import Tuition from '../Pages/Home Pages/admissions/tuition/Tuition'
+import News from '../Pages/Home Pages/news/News'
 
 
 
@@ -53,7 +58,12 @@ function App() {
            <Route path="/profile/editPg" element={<EditPg/>}/> 
            <Route path="/card" element={<Card/>}/> 
            <Route path="/mode-of-study" element={<ModeOfStdy/>}/>
+           <Route path="/apply-for-a-programme" element={<Apply/>}/>
+           <Route path="/faq" element={<FAQ/>}/>
+           <Route path="/tuition" element={<Tuition/>}/>
+           <Route path="/news" element={<News/>}/>
            <Route path="/sn" element={<SignIn/>}/>
+           <Route path="/accordion" element={<Accordion/>}/>
 
 
          </Routes>

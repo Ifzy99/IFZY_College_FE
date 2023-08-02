@@ -12,6 +12,9 @@ const DashNav = () => {
   return (
     <>
     <div className="topPg">
+    <div className="dashNavImg">
+      <img src="Image/myLogo.png" alt="" className="d-lg-none" style={{width:"100px"}} />
+    </div>
     <div className="topPgIcon">
         <Link className="iconLink" to="/notices">
         <h3><IoIosNotifications/></h3>

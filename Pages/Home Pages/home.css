@@ -29,11 +29,9 @@ ol{
     color: rgb(217, 68, 68);
     line-height: 1.5;
 }
-
 .coreVHeader{
     background-color: rgb(207, 204, 204);
 }
-
 .watchWRD{
     width: 60%;
     margin: 50px auto;
@@ -58,14 +56,12 @@ ol{
     font-weight: 900;
     padding: 4% 5%;
 }
-
 .missMsg p{
     padding: 0 5%;
     color:#4e4a4a ;
     font-size: 2rem;
     font-family: 'Dongle', sans-serif;
 }
-
 .msgCont{
     width: 85%;
     margin: 30px auto; 
@@ -86,3 +82,15 @@ ol{
     font-size: 1.2rem;
 }
 
+
+
+/* NEWS  */
+.newsCont{
+    width: 80%;
+    padding: 10% 0;
+    margin: 20px auto;
+}
+.newsCont h1{
+    font-size: 4.5rem;
+    font-weight: 600;
+}

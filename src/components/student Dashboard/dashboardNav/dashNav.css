@@ -1,11 +1,16 @@
 .topPg{
     border-bottom: 2px solid #4e4a4a;
+    display: flex;
+    justify-content: space-between;
 }
 .topPgIcon{
     display: flex;
     color: #4e4a4a;
     gap: 40px;
     justify-content: end;
+}
+.dashNavImg{
+    padding: 0 16px;
 }
 
 .iconLink{

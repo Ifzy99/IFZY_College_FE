@@ -36,8 +36,8 @@ const Profile = () => {
             </div>
 
             <div className="proList mt-3">
-              <div className="row">
-                <div className="profTitle col-lg-6 col-sm-12">
+            <div className="row">
+            <div className="profTitle col-lg-6 col-sm-12">
                   <p>Firstname</p>
                   <div>{studentData.firstname}</div>
                   <hr />

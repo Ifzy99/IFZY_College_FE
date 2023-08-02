@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 
 import { useSelector, useDispatch } from 'react-redux'
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import "../dashB/dash.css";
 import {IoIosNotifications } from 'react-icons/io';
@@ -23,25 +23,29 @@ import OffCanvas from "../../../../src/components/student Dashboard/offCanvas Co
 
 
 const Dashboard = ({}) => {
+  let navigate = useNavigate
   const dispatch=useDispatch()
   let studentData = useSelector((state)=>state.counterReducer.studentData)
   // studentData.email
   // console.log(myEmail);
 
-  useEffect(() => {
+  useEffect(() => {  
     // let email = 'olatunbosunifeoluwa123@gmail.com'
     let studentToken = localStorage.studentToken
     let endpoint = "http://localhost:5000/student_info"
     axios.get(endpoint, {
       headers: {
-        Authorization: studentToken,
-        'Content-Type': "application/json"
+         "Authorization":`Bearer ${studentToken}`,
+        'Content-Type': "application/json",
+        "Accept": "application/json"
       }
     })
     .then((response) => {
-      // console.log(response.data);
       dispatch(studentInfo(response.data))
-
+      if(response.data.status){
+      }else{
+        navigate("/StudentSignIn")
+      }
     })
   }, [studentData])
   

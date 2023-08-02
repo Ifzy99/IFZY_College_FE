@@ -291,6 +291,18 @@
    font-size: 0.9rem;
 }
 
+/* ACCORDION  */
+.accordion-item{
+    box-shadow: #fff;
+    /* background-color: #cbcac8; */
+}
+.accordion-header button{
+    background-color: #f7f5f2;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #4e4a4a;
+}
+
 
 
 
@@ -407,6 +419,14 @@
           }
         }
       }
+
+
+      .accordion-header button{
+        font-size: 1rem;
+        font-weight: 200;
+        color: #4e4a4a;
+    }
+    
 
     .phmf-container{
         width: 90%;
