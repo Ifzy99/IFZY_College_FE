@@ -78,6 +78,22 @@
     color: #ff0000;
  }    
 
+ /* COURSE REG  */
+ .cRegBdy{
+    width: 95%;
+    margin: 20px auto;
+    padding: 2rem 0;
+    color: #4e4a4a;
+ }
+
+ /* PAY TUITION */
+ .semester{
+    width: 90%;
+    margin: 0 auto;
+ }
+
+
+
 
 
 @media (max-width: 768px) {

@@ -87,10 +87,13 @@ const OffCanvas = () => {
             </div>
             <div className="offCanvCont">
                <h5>Academics</h5>
+               <Link className="offlink" to="/course-registration">
                <div className="offCanvItem">
                 <h4><MdNotificationImportant/></h4>
                 <p className="mt-2 ms-3">Course Registration</p>
                </div>
+               </Link>
+               
                <div className="offCanvItem">
                 <h4><FaFileDownload/></h4>
                 <p className="mt-2 ms-3">Resources</p>
@@ -102,10 +105,12 @@ const OffCanvas = () => {
             </div>
             <div className="offCanvCont">
                <h5>Payments</h5>
+               <Link className="offlink" to="/pay-tuition">
                <div className="offCanvItem">
                 <h4><FaWallet/></h4>
                 <p className="mt-2 ms-3">Pay Tuition</p>
                </div>
+               </Link>
                <div className="offCanvItem">
                 <h4><FaWallet/></h4>
                 <p className="mt-2 ms-3">Payment History</p>

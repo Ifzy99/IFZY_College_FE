@@ -22,7 +22,7 @@ const Tuition = () => {
              <div className="bDegCont">
                 <img src="Image/graduation-cap.jpg" alt="" style={{width:"400px"}} />
                 <div className="accrd w-100 ps-5">
-                  <Accordion question={"Application Fee"} question1={"Acceptance Fee"} question2={"Cummmulative Fee"}/>
+                  <Accordion question={"Application Fee"} question1={"Acceptance Fee"} bdy={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel explicabo dolore nostrum quasi aperiam pariatur sint numquam ipsam dolorem earum, expedita fuga, similique possimus architecto eos, exercitationem non maxime ratione voluptates aspernatur nulla provident accusamus facere. Consequatur fugit iste veniam, deserunt saepe ut consequuntur ea culpa architecto?"}/>
                   <Link to="/StudentSignUp">
                      <button className="acaInfoBtn">
                         <span>Start Basic Degree Application</span>
@@ -38,7 +38,7 @@ const Tuition = () => {
                <div className="bDegCont" style={{width:"80%", margin:"10px auto"}}>
                <img src="Image/code1.jpg" alt="" style={{width:"400px"}} />
                <div className="accrd w-100 ps-5">
-                 <Accordion question={"Application Fee"} question1={"Acceptance Fee"} question2={"Cummmulative Fee"}/>
+                 <Accordion question={"Application Fee"} question1={"Acceptance Fee"} bdy={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel explicabo dolore nostrum quasi aperiam pariatur sint numquam ipsam dolorem earum, expedita fuga, similique possimus architecto eos, exercitationem non maxime ratione voluptates aspernatur nulla provident accusamus facere. Consequatur fugit iste veniam, deserunt saepe ut consequuntur ea culpa architecto?"}/>
                  <div className="pBtnCont" style={{textAlign:"start"}}>
                  <Link to="/StudentSignUp">
                     <button className="acaInfoBtn">
@@ -55,7 +55,7 @@ const Tuition = () => {
              <div className="bDegCont">
                 <img src="Image/codeWork.jpg" alt="" style={{width:"400px"}} />
                 <div className="accrd w-100 ps-5">
-                  <Accordion question={"Application Fee"} question1={"Acceptance Fee"} question2={"Cummmulative Fee"}/>
+                  <Accordion question={"Application Fee"} question1={"Acceptance Fee"} bdy={" Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi fugiat, eos aliquam itaque ex sed optio repudiandae explicabo, enim quos beatae eaque officia porro aut sit dolor odit. Quia quaerat blanditiis sit. Tempore deleniti quam consequatur, iusto earum vel, veritatis velit vero possimus non hic quaerat, molestias voluptas saepe distinctio."}/>
                   <Link to="/StudentSignUp">
                      <button className="acaInfoBtn">
                         <span>Start Masters Degree Application</span>

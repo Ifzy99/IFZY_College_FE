@@ -27,6 +27,8 @@ import FAQ from '../Pages/Home Pages/admissions/faq/FAQ'
 import Accordion from './components/landing Pg/Accordion'
 import Tuition from '../Pages/Home Pages/admissions/tuition/Tuition'
 import News from '../Pages/Home Pages/news/News'
+import CourseReg from '../Pages/Student Pages/dashboard/courseReg/CourseReg'
+import Payment from '../Pages/Student Pages/dashboard/pay tuition/Tuition'
 
 
 
@@ -55,6 +57,8 @@ function App() {
            <Route path="/profile" element={<Profile/>}/>
            <Route path="/docs" element={<Documents/>}/>
            <Route path="/notices" element={<Notice/>}/>
+           <Route path="/course-registration" element={<CourseReg/>}/>
+           <Route path="/pay-tuition" element={<Payment/>}/>
            <Route path="/profile/editPg" element={<EditPg/>}/> 
            <Route path="/card" element={<Card/>}/> 
            <Route path="/mode-of-study" element={<ModeOfStdy/>}/>

@@ -153,7 +153,20 @@
     padding: 20px;
     margin: 40px 20px 40px 0;
     justify-content: space-between;
+    animation: 3s 1 alternate slideup;
+  
 }
+@keyframes slideup {
+    from {
+      margin-top: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-top: 0%;
+      width: 100%;
+    }
+  }
 
 .AboutIcons {
     padding-bottom: 1rem;
@@ -263,6 +276,7 @@
       .welcImg{
           width: 50%;
           margin: 0 10px;
+          animation: slideout 5s;
         }
         .welcText{
           color: #4e4a4a;
@@ -271,7 +285,19 @@
           font-family: 'Times New Roman', Times, serif;
           font-size: 1rem;
       }
+      .wText{
+       animation: slidein 5s;
+      }
+     
     }
+  }
+  @keyframes slidein {
+    from { margin-left: 100%; width: 500%;}
+    to {margin-left: 0%; width: 300%;}
+  }
+  @keyframes slideout {
+    from{margin-right: 100%; width: 200%;}
+    to{margin-right: 0%; width: 100%;}
   }
 
   /* COPYRIGHT SECTION */
@@ -388,9 +414,10 @@
             width: 100%;
             flex-direction: column;
             .AboutBox {
-                width: 97%;
+                width: 90%;
                 margin: 10px auto;
                 padding: 2.5rem;
+               
             }
         }
     }
