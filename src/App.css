@@ -197,7 +197,7 @@
             .col {
                 transition: ease-in-out;
                 .colImg {
-                    background-image: url("./Image/html.jpg");
+                    background-image: url("/Image/html.jpg");
                     background-size: cover;
                     height: 200px;
                     background-position: center;
@@ -206,7 +206,7 @@
                     justify-content: center;
                 }
                 .colImg1 {
-                    background-image: url("./Image/JS.jpg");
+                    background-image: url("/Image/JS.jpg");
                     background-size: cover;
                     height: 200px;
                     background-position: center;
@@ -215,7 +215,7 @@
                     justify-content: center;
                 }
                 .colImg2 {
-                    background-image: url("./Image/React.jpg");
+                    background-image: url("/Image/React.jpg");
                     background-size: cover;
                     height: 200px;
                     background-position: center;
@@ -224,7 +224,7 @@
                     justify-content: center;
                 }
                 .colImg3 {
-                    background-image: url("../Image/angular.jpg");
+                    background-image: url("/Image/angular.jpg");
                     background-size: cover;
                     height: 200px;
                     background-position: center;
@@ -233,7 +233,7 @@
                     justify-content: center;
                 }
                 .colImg4 {
-                    background-image: url("./Image/PHP.jpg");
+                    background-image: url("/Image/PHP.jpg");
                     background-size: cover;
                     height: 200px;
                     background-position: center;
@@ -242,7 +242,7 @@
                     justify-content: center;
                 }
                 .colImg5 {
-                    background-image: url("./Image/sql.jpg");
+                    background-image: url("/Image/sql.jpg");
                     background-size: cover;
                     height: 200px;
                     background-position: center;
