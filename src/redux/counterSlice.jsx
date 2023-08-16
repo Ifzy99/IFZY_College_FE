@@ -13,12 +13,11 @@ import {createSlice} from "@reduxjs/toolkit"
         studentInfo : (state, action)=>{
             state.studentData = action.payload
         }
-
      }
 })
 
 
 
-export const {increment, increWtParams,studentInfo} = counterSlice.actions
+export const {increWtParams,studentInfo} = counterSlice.actions
 
 export default counterSlice.reducer

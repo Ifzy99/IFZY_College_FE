@@ -1,0 +1,22 @@
+
+
+
+.acBdyHeader{
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+}
+.acBdyTxt{
+    display: flex;
+    justify-content: space-between;
+    max-width: 560px;
+    text-align: center;
+    /* border-bottom: 0.2px solid grey; */
+}
+.acBdyTxt p{
+    font-size: 0.8rem;
+}
+
+.acBdyFooter{
+    display: flex;
+}

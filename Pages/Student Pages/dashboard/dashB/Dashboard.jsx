@@ -10,8 +10,8 @@ import { MdEmail, MdNotificationImportant,MdOutlineAutoGraph } from 'react-icons
 import { RiGraduationCapFill } from 'react-icons/ri';
 import { BiSolidSchool } from 'react-icons/bi';
 import DashNav from "../../../../src/components/student Dashboard/dashboardNav/DashNav";
-import studentInfo from "../../../../src/redux/counterSlice";
 import OffCanvas from "../../../../src/components/student Dashboard/offCanvas Comp/OffCanvas";
+import { studentInfo } from "../../../../src/redux/counterSlice";
 
 
 
@@ -26,7 +26,7 @@ const Dashboard = ({}) => {
   let navigate = useNavigate
   const dispatch=useDispatch()
   let studentData = useSelector((state)=>state.counterReducer.studentData)
-  console.log(studentData);
+  // console.log(studentData);
   // studentData.email
   // console.log(myEmail);
 
@@ -36,14 +36,14 @@ const Dashboard = ({}) => {
     const endpoint = "http://localhost:5000/student_info"
     axios.get(endpoint, {
       headers: {
-         "Authorization":`Bearer ${studentToken}`,
+        Authorization: studentToken,
         "Content-Type": "application/json",
         "Accept": "application/json"
-      }
+      } 
     })
     .then((response) => {
-      dispatch(studentInfo(response.data))
       if(response.data.status){
+      dispatch(studentInfo(response.data.response))
       }else{
         navigate("/StudentSignIn")
       }

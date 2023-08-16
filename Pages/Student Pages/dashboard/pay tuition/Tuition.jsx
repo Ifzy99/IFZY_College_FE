@@ -3,6 +3,7 @@ import "../style.css"
 import OffCanvas from '../../../../src/components/student Dashboard/offCanvas Comp/OffCanvas'
 import DashNav from '../../../../src/components/student Dashboard/dashboardNav/DashNav'
 import Accordion from '../../../../src/components/landing Pg/Accordion'
+import PayAccordion from '../../../../src/components/student Dashboard/payAccordion/PayAccordion'
 
 const Payment = () => {
   return (
@@ -20,7 +21,9 @@ const Payment = () => {
                TUITION PAYMENTS
           </div>
             <div className="semester">
-              <Accordion/>
+              <PayAccordion semester={"SECOND SEMESTER"} semester1={"FIRST SEMESTER"}/>
+              
+              
             </div>  
           
              

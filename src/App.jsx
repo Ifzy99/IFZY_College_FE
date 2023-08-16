@@ -29,6 +29,7 @@ import Tuition from '../Pages/Home Pages/admissions/tuition/Tuition'
 import News from '../Pages/Home Pages/news/News'
 import CourseReg from '../Pages/Student Pages/dashboard/courseReg/CourseReg'
 import Payment from '../Pages/Student Pages/dashboard/pay tuition/Tuition'
+import PayAccordion from './components/student Dashboard/payAccordion/PayAccordion'
 
 
 
@@ -68,6 +69,7 @@ function App() {
            <Route path="/news" element={<News/>}/>
            <Route path="/sn" element={<SignIn/>}/>
            <Route path="/accordion" element={<Accordion/>}/>
+           <Route path="/payment-accordion" element={<PayAccordion/>}/>
 
 
          </Routes>

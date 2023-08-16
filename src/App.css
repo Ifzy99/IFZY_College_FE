@@ -224,7 +224,7 @@
                     justify-content: center;
                 }
                 .colImg3 {
-                    background-image: url("./Image/angular.jpg");
+                    background-image: url("../Image/angular.jpg");
                     background-size: cover;
                     height: 200px;
                     background-position: center;
