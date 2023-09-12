@@ -20,6 +20,9 @@
       width: 100px;
       margin: 0 auto;
     }
+    .headerText{
+      font-family: 'Times New Roman', Times, serif;
+    }
    }
 
 
@@ -87,6 +90,10 @@
     width: 80%;    
   }
 
+  .alt p{
+    font-family: cursive;
+  }
+
 .sPgFooter{
   width: 80%;
   margin: 0 auto;
@@ -106,16 +113,21 @@
       }
     }
   }
+  .googCont h5{
+    font-size: 1rem;
+}
   .goog:hover{
     background-color: aliceblue;
   }
   
   .footNt{
     margin: 20px auto;
+    font-family:Georgia, 'Times New Roman', Times, serif;
   }
 
   .lgIn{
     margin: 15px 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
   }
 }
 

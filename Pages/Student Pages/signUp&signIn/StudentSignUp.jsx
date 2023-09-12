@@ -20,7 +20,8 @@ const StudentSignUp = () => {
     onSubmit: (values) => {
       console.log(values);
 
-      const endpoint = "http://localhost:5000/student/SignUp";
+      // const endpoint = "http://localhost:5000/student/SignUp";
+      const endpoint = "ifzy-college-be.vercel.app/student/SignUp";
       axios.post(endpoint, values).then((response) => {
           if (response.data == "save") {
             navigate("/StudentSignIn");
@@ -78,7 +79,7 @@ const StudentSignUp = () => {
   return (
     <>
       <div className="sPage">
-        <div className="text-center display-6 fw-normal my-3">
+        <div className="headerText text-center display-6 fw-normal my-3">
           Create your account
         </div>
         <div

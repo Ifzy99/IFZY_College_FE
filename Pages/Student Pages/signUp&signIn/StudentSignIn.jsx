@@ -36,7 +36,7 @@ const StudentSignIn = () => {
   return (
     <>
       <div className="sPage">
-        <div className="text-center display-6 fw-normal my-3">Welcome back</div>
+        <div className="headerText text-center display-6 fw-normal my-3">Welcome back</div>
         <div
           className="containerfluid col-lg-6 col-sm-11 shadow p-3 mx-auto"
           style={{ borderRadius: "4%" }}
@@ -52,7 +52,7 @@ const StudentSignIn = () => {
             style={{ width: "80%", margin: "0 auto" }}
           >
             <input required="required" type="text" name="email" onChange={studentData.handleChange} />
-            <span>Email</span>
+            <span className="">Email</span>
             <i></i>
           </div>
 

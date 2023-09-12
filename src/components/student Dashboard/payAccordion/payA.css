@@ -16,7 +16,13 @@
 .acBdyTxt p{
     font-size: 0.8rem;
 }
-
 .acBdyFooter{
     display: flex;
+}
+.payBtn{
+    background-color: red;
+    color: #fff;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 0.8rem;
 }

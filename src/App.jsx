@@ -20,7 +20,6 @@ import Documents from '../Pages/Student Pages/dashboard/docx/Documents'
 import Notice from '../Pages/Student Pages/dashboard/notice board/Notice'
 import EditPg from '../Pages/Student Pages/dashboard/profile/EditPg'
 import Card from './components/landing Pg/Card'
-import SignIn from '../Pages/SignIn'
 import ModeOfStdy from '../Pages/Home Pages/admissions/MOS/ModeOfStdy'
 import Apply from '../Pages/Home Pages/admissions/applyForProg/Apply'
 import FAQ from '../Pages/Home Pages/admissions/faq/FAQ'
@@ -67,7 +66,6 @@ function App() {
            <Route path="/faq" element={<FAQ/>}/>
            <Route path="/tuition" element={<Tuition/>}/>
            <Route path="/news" element={<News/>}/>
-           <Route path="/sn" element={<SignIn/>}/>
            <Route path="/accordion" element={<Accordion/>}/>
            <Route path="/payment-accordion" element={<PayAccordion/>}/>
 

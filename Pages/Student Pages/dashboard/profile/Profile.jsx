@@ -3,12 +3,15 @@ import "../style.css";
 import OffCanvas from "../../../../src/components/student Dashboard/offCanvas Comp/OffCanvas";
 import DashNav from "../../../../src/components/student Dashboard/dashboardNav/DashNav";
 import { BsImageFill,BsFillPencilFill } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { studentInfo } from "../../../../src/redux/counterSlice";
+import axios from "axios";
 
 
 const Profile = () => {
   let studentData = useSelector((state)=>state.counterReducer.studentData)
+
   return (
     <>
       <div className="mainCont">
